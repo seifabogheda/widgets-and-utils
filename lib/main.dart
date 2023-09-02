@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pusher_example/home.dart';
 
-import 'chat screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pusher Example',
+      title: 'Utils And Widgets ',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home:  const SingleChatView (chatId: 1, chatName: '', image: '',),
+      home: const Home(),
     );
   }
 }
